@@ -14,3 +14,4 @@ This will create a new container and use its folder `/var/lib/mysql` to store Ma
 After this you can start your MariaDB image using volumes in the container created above (put the name of container in `--volumes-from`).  
 
 `docker run -d --volumes-from db-data -p 3306:3306 stephenbutcher/mar10c7`
+
