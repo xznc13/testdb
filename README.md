@@ -1,5 +1,7 @@
 # MariaDB 10.0 Docker Image (Centos7)
 
+Run the image passing through the access port for MariaDB and changing the 'admin' password to be 'mypass'
+
 `docker run -d -p 3306:3306 -e MARIADB_PASS="mypass" stephenbutcher/mar10c7`
 
 ### Mounting the database file volume from other containers
