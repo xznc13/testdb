@@ -1,5 +1,5 @@
 FROM centos:centos7
-MAINTAINER Stephen Butcher
+MAINTAINER stephen.butcher@redhound.net
 
 # Copy only files required for the following RUN commands (leverage Docker caching)
 COPY container-files/etc/yum.repos.d/* /etc/yum.repos.d/
