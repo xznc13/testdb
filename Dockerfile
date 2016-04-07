@@ -31,7 +31,7 @@ RUN rm /tmp/oraclient.tar.gz
 RUN /usr/sbin/useradd vagrant -u 500 -U -G wheel
 RUN echo 'root:RedH0und$' | chpasswd && echo 'vagrant:vagrant' | chpasswd
 
-# RUN /etc/rc.d/init.d/sshd start
+# RUN /etc/rc.d/init.d/sshd start # -- use manually if required, works but gives error message!
 
 # Add VOLUME to allow backup of data
 VOLUME ["/var/lib/mysql"]
